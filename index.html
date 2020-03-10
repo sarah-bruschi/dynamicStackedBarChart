@@ -1,0 +1,18 @@
+# NPM
+$ npm install jquery-csv --save
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+        crossorigin="anonymous">
+</script>
+<script src="src/jquery.csv.js"></script>
+
+<script>
+var sample = 'AB_NYC_2019.csv';
+fs.readFile(sample, 'UTF-8', function(err, csv) {
+  $.csv.toArrays(csv, {}, function(err, data) {
+    for(var i=0, len=data.length; i<len; i++) {
+      console.log(data[i]);
+    }
+  });
+});
+</script>
