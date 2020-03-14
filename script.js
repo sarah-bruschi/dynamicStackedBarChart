@@ -1,7 +1,7 @@
 
 var csv_file_API = './top10s.csv';
 
-// $(document).ready(function () {
+$(document).ready(function () {
 
 
 
@@ -95,4 +95,4 @@ $.ajax({
 
 }); // end: of Ajax call
 
-// });//end document on ready 
+});//end document on ready 
