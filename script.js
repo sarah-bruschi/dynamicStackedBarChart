@@ -1,4 +1,6 @@
-<script>
+
+$(document).ready(function () {
+
 var csv_file_API = './top10s.csv';
 
 // read csv file and convert to json format
@@ -28,25 +30,60 @@ $.ajax({
                 '<li class="list-group-item d-flex justify-content-between align-items-center">' + 
                     
                     '<span style="margin-right: 2rem; font-size: 2rem; font-weight: bold; color: #37474F">' +
-                        value['FIRST NAME'] +
+                        value['Title'] +
                     '</span>' +
 
                     '<span style="margin-right: 2rem; font-size: 2rem; font-weight: bold; color: #37474F">' +
-                        value['LAST NAME'] +
+                        value['Artist Name'] +
                     '</span>' +
 
                     '<span class="badge badge-primary badge-pill">' +
-                        value.CITY +
+                        value['Top Genre'] +
                     '</span>' +
 
                     '<span class="badge warning-color-dark badge-pill">' + 
-                        value['PHONE NUMBER'] +
+                        value['Year'] +
                     '</span>' +
 
                     '<span class="badge success-color-dark badge-pill">' +
-                        value['EMAIL ADDRESS'] +
+                        value['BPM'] +
                     '</span>' +
 
+                    '<span class="badge success-color-dark badge-pill">' +
+                    value['NRGY'] +
+                    '</span>' +
+
+                    '<span class="badge success-color-dark badge-pill">' +
+                    value['dnce'] +
+                    '</span>' +
+
+                    '<span class="badge success-color-dark badge-pill">' +
+                    value['dB'] +
+                    '</span>' +
+
+                    '<span class="badge success-color-dark badge-pill">' +
+                    value['live'] +
+                    '</span>' +
+
+                    '<span class="badge success-color-dark badge-pill">' +
+                    value['val'] +
+                    '</span>' +
+
+                    '<span class="badge success-color-dark badge-pill">' +
+                    value['dur'] +
+                    '</span>' +
+
+                    '<span class="badge success-color-dark badge-pill">' +
+                    value['acous'] +
+                    '</span>' +
+
+                    '<span class="badge success-color-dark badge-pill">' +
+                    value['spch'] +
+                    '</span>' +
+
+                    '<span class="badge success-color-dark badge-pill">' +
+                    value['pop'] +
+                    '</span>' +
                 '</li>'
             );
 
@@ -55,4 +92,5 @@ $.ajax({
     } // end: Ajax success API call
 
 }); // end: of Ajax call
-</script>
+
+});//end document on ready 
