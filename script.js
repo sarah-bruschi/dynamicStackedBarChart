@@ -30,6 +30,10 @@ $.ajax({
             $('#showCSV').append(
 
                 '<li class="list-group-item d-flex justify-content-between align-items-center">' + 
+
+                '<span style="margin-right: 2rem; font-size: 2rem; font-weight: bold; color: #37474F">' +
+                value['Rank'] +
+                '</span>' +
                     
                     '<span style="margin-right: 2rem; font-size: 2rem; font-weight: bold; color: #37474F">' +
                         value['title'] +
