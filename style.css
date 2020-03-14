@@ -1,0 +1,17 @@
+html,
+body {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: fit-content;
+}
+
+ul{
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
+
