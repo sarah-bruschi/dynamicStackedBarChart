@@ -1,7 +1,10 @@
 
-$(document).ready(function () {
 
 var csv_file_API = './top10s.csv';
+
+$(document).ready(function () {
+
+
 
 // read csv file and convert to json format
 $.ajax({
