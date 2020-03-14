@@ -32,27 +32,27 @@ $.ajax({
                 '<li class="list-group-item d-flex justify-content-between align-items-center">' + 
                     
                     '<span style="margin-right: 2rem; font-size: 2rem; font-weight: bold; color: #37474F">' +
-                        value['Title'] +
+                        value['title'] +
                     '</span>' +
 
                     '<span style="margin-right: 2rem; font-size: 2rem; font-weight: bold; color: #37474F">' +
-                        value['Artist Name'] +
+                        value['artist'] +
                     '</span>' +
 
                     '<span class="badge badge-primary badge-pill">' +
-                        value['Top Genre'] +
+                        value['top genre'] +
                     '</span>' +
 
                     '<span class="badge warning-color-dark badge-pill">' + 
-                        value['Year'] +
+                        value['year'] +
                     '</span>' +
 
                     '<span class="badge success-color-dark badge-pill">' +
-                        value['BPM'] +
+                        value['bpm'] +
                     '</span>' +
 
                     '<span class="badge success-color-dark badge-pill">' +
-                    value['NRGY'] +
+                    value['nrgy'] +
                     '</span>' +
 
                     '<span class="badge success-color-dark badge-pill">' +
