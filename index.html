@@ -1,18 +1,20 @@
-# NPM
-$ npm install jquery-csv --save
+<head>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.3/jquery.csv.min.js"></script>
+  <script type="text/javascript" lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.1/xlsx.full.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" 
-        crossorigin="anonymous">
-</script>
-<script src="src/jquery.csv.js"></script>
+</head>
+
 
 <script>
-var sample = 'AB_NYC_2019.csv';
-fs.readFile(sample, 'UTF-8', function(err, csv) {
-  $.csv.toArrays(csv, {}, function(err, data) {
-    for(var i=0, len=data.length; i<len; i++) {
-      console.log(data[i]);
-    }
-  });
-});
+
+
+
+// var sample = 'AB_NYC_2019.csv';
+// fs.readFile(sample, 'UTF-8', function(err, csv) {
+//   $.csv.toArrays(csv, {}, function(err, data) {
+//     for(var i=0, len=data.length; i<len; i++) {
+//       console.log(data[i]);
+//     }
+//   });
+// });
 </script>
