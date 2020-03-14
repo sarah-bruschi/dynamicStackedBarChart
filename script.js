@@ -22,7 +22,7 @@ $.ajax({
     success: function (data) {
 
         var jsonData = $.csv.toObjects(data);
-        $( jsonData ).filter( value['year'] == '2010' ).css( "background-color", "red" );
+
         console.log(jsonData);
 
         $.each(jsonData, function (index, value) {
@@ -39,7 +39,7 @@ $.ajax({
                         value['title'] +
                     '</span>' +
 
-                    '<span style="margin-right: 2rem; font-size: 1rem; font-weight: bold; color: #37474F">' +
+                    '<span style="margin-right: 2rem; font-size: rem; font-weight: bold; color: #37474F">' +
                         value['artist'] +
                     '</span>' +
 
