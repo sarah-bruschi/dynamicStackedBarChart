@@ -1,5 +1,5 @@
 
-var csv_file_API = './top10s.csv';
+var csv_file_API = './2019top10.xlsx';
 
 $(document).ready(function () {
 
@@ -8,7 +8,7 @@ $(document).ready(function () {
 // read csv file and convert to json format
 $.ajax({
 
-    type: 'GET',
+    type: 'GET', 
 
     url: csv_file_API,
 
@@ -91,6 +91,7 @@ $.ajax({
                     value['pop'] +
                     '</span>' +
                 '</li>'
+                + "|"
             );
 
         });
