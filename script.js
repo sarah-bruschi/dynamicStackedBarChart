@@ -39,55 +39,54 @@ $.ajax({
                         value['artist'] +
                     '</span>' +
 
-                    '<span class="badge badge-primary badge-pill">' +
+                    '<span class="">' +
                         value['top genre'] +
                     '</span>' +
 
-                    '<span class="badge warning-color-dark badge-pill">' + 
+                    '<span class=" ">' + 
                         value['year'] +
                     '</span>' +
 
-                    '<span class="badge success-color-dark badge-pill">' +
+                    '<span class="  ">' +
                         value['bpm'] +
                     '</span>' +
 
-                    '<span class="badge success-color-dark badge-pill">' +
+                    '<span class="  ">' +
                     value['nrgy'] +
                     '</span>' +
 
-                    '<span class="badge success-color-dark badge-pill">' +
+                    '<span class="  ">' +
                     value['dnce'] +
                     '</span>' +
 
-                    '<span class="badge success-color-dark badge-pill">' +
+                    '<span class=" ">' +
                     value['dB'] +
                     '</span>' +
 
-                    '<span class="badge success-color-dark badge-pill">' +
+                    '<span class=" ">' +
                     value['live'] +
                     '</span>' +
 
-                    '<span class="badge success-color-dark badge-pill">' +
+                    '<span class="  ">' +
                     value['val'] +
                     '</span>' +
 
-                    '<span class="badge success-color-dark badge-pill">' +
+                    '<span class="  ">' +
                     value['dur'] +
                     '</span>' +
 
-                    '<span class="badge success-color-dark badge-pill">' +
+                    '<span class=" ">' +
                     value['acous'] +
                     '</span>' +
 
-                    '<span class="badge success-color-dark badge-pill">' +
+                    '<span class=" ">' +
                     value['spch'] +
                     '</span>' +
 
-                    '<span class="badge success-color-dark badge-pill">' +
+                    '<span class="  ">' +
                     value['pop'] +
                     '</span>' +
                 '</li>'
-                + "|"
             );
 
         });
