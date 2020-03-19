@@ -85,8 +85,8 @@ arrTrace = [];
 for (i = 0; i < titles.length; i++) {
   var  trace   = {
                 x: [titles[i]],
-                y: [bpm.val(i)],
-                name: [artist.val(i)],
+                y: [bpm[i]],
+                name: [artist[i]],
                 type:'bar',
                 marker: {
                     color: 'colors[i]',
