@@ -55,8 +55,8 @@ $.ajax({
             );
 
         });
-        titles.push(jsonData.title);
-        bpm.push(jsonData.bpm);
+        titles.push(value['title']);
+        bpm.push(value['bpm']);
     } // end: Ajax success API call
 
 }); // end: of Ajax call
