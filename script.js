@@ -53,9 +53,9 @@ $.ajax({
                     '</td>' +
                 '</tr>'
             );
-            titles.push(value['title']);
-            artist.push(value['artist']);
-            bpm.push(value['bpm']);
+            titles.push(value['title'],);
+            artist.push(value['artist'],);
+            bpm.push(value['bpm'],);
         });
     } // end: Ajax success API call
 
@@ -63,7 +63,7 @@ $.ajax({
 
 
 
-console.log(titles.length);
+console.log(titles);
 console.log(artist);
 console.log(bpm);
 
