@@ -3,7 +3,8 @@ var csv_file_API = './2019top10.csv';
 
 $(document).ready(function () {
 
-
+    var titles =  [];
+    var bpm =  [];
 
 // read csv file and convert to json format
 $.ajax({
@@ -54,13 +55,13 @@ $.ajax({
             );
 
         });
-
+        titles.push(jsonData.title);
+        bpm.push(jsonData.bpm);
     } // end: Ajax success API call
 
 }); // end: of Ajax call
 
-var titles =  [jsonData.title];
-var bpm =  [jsonData.bpm];
+
 
 console.log(titles);
 console.log(bpm);
