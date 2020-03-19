@@ -1,5 +1,5 @@
 
-var csv_file_API = './2019top10.xlsx';
+var csv_file_API = './2019top10.csv';
 
 $(document).ready(function () {
 
