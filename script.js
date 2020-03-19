@@ -16,14 +16,14 @@ $.ajax({
 
     error: function (e) {
         alert('An error occurred while processing API calls');
-        console.log("API call Failed: ", e);
+        // console.log("API call Failed: ", e);
     },
 
     success: function (data) {
 
         var jsonData = $.csv.toObjects(data);
 
-        console.log(jsonData);
+        // console.log(jsonData);
 
         $.each(jsonData, function (index, value) {
 
@@ -59,4 +59,9 @@ $.ajax({
 
 }); // end: of Ajax call
 
+var titles =  [jsonData.title];
+var bpm =  [jsonData.bpm];
+
+console.log(titles);
+console.log(bpm);
 });//end document on ready 
