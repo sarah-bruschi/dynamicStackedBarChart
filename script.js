@@ -27,7 +27,7 @@ $.ajax({
 
         $.each(jsonData, function (index, value) {
 
-            $('#showCSV').append(
+            $('#showExcel').append(
 
                 '<tr>' + 
                     
