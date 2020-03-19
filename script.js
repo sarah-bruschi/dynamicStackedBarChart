@@ -31,7 +31,6 @@ $.ajax({
             $('#showExcel').append(
 
                 '<tr>' + 
-                    
                     '<td>' +
                         value['title'] +
                     '</td>' +
@@ -53,10 +52,9 @@ $.ajax({
                     '</td>' +
                 '</tr>'
             );
-
+            titles.push(value['title']);
+            bpm.push(value['bpm']);
         });
-        titles.push(value['title']);
-        bpm.push(value['bpm']);
     } // end: Ajax success API call
 
 }); // end: of Ajax call
