@@ -29,64 +29,64 @@ $.ajax({
 
             $('#showCSV').append(
 
-                '<li class="list-group-item d-flex justify-content-between align-items-center">' + 
+                '<tr>' + 
                     
-                    '<span style="margin-right: 2rem; font-size: 1rem; font-weight: bold; color: #37474F">' +
+                    '<td>' +
                         value['title'] +
-                    '</span>' +
+                    '</td>' +
 
-                    '<span style="margin-right: 2rem; font-size: rem; font-weight: bold; color: #37474F">' +
+                    '<td>' +
                         value['artist'] +
-                    '</span>' +
+                    '</td>' +
 
-                    '<span class="">' +
+                    '<td>' +
                         value['top genre'] +
-                    '</span>' +
+                    '</td>' +
 
-                    '<span class=" ">' + 
+                    '<td>' + 
                         value['year'] +
-                    '</span>' +
+                    '</td>' +
 
                     '<span class="  ">' +
                         value['bpm'] +
-                    '</span>' +
+                    '</td>' +
 
                     '<span class="  ">' +
                     value['nrgy'] +
-                    '</span>' +
+                    '</td>' +
 
                     '<span class="  ">' +
                     value['dnce'] +
-                    '</span>' +
+                    '</td>' +
 
-                    '<span class=" ">' +
+                    '<td>' +
                     value['dB'] +
-                    '</span>' +
+                    '</td>' +
 
-                    '<span class=" ">' +
+                    '<td>' +
                     value['live'] +
-                    '</span>' +
+                    '</td>' +
 
                     '<span class="  ">' +
                     value['val'] +
-                    '</span>' +
+                    '</td>' +
 
                     '<span class="  ">' +
                     value['dur'] +
-                    '</span>' +
+                    '</td>' +
 
-                    '<span class=" ">' +
+                    '<td>' +
                     value['acous'] +
-                    '</span>' +
+                    '</td>' +
 
-                    '<span class=" ">' +
+                    '<td>' +
                     value['spch'] +
-                    '</span>' +
+                    '</td>' +
 
                     '<span class="  ">' +
                     value['pop'] +
-                    '</span>' +
-                '</li>'
+                    '</td>' +
+                '</tr>'
             );
 
         });
