@@ -22,18 +22,15 @@ $.ajax({
     success: function (data) {
 
         var jsonData = $.csv.toObjects(data);
+        var jsonData1 = jsonData.replace("�", "&ntilde;");
 
-        console.log(jsonData);
+        console.log(jsonData1);
 
         $.each(jsonData, function (index, value) {
 
             $('#showCSV').append(
 
                 '<li class="list-group-item d-flex justify-content-between align-items-center">' + 
-
-                '<span style="margin-right: 2rem; font-size: 1em; font-weight: bold; color: #37474F">' +
-                value['Rank'] +
-                '</span>' +
                     
                     '<span style="margin-right: 2rem; font-size: 1rem; font-weight: bold; color: #37474F">' +
                         value['title'] +
