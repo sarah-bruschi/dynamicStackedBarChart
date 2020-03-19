@@ -63,7 +63,7 @@ $.ajax({
 
 
 
-console.log(titles);
+console.log(titles.length);
 console.log(artist);
 console.log(bpm);
 
@@ -94,7 +94,7 @@ for (i = 0; i < titles.length; i++) {
                     }
             };
  arrTrace[i] = trace; 
-}
+};
 
 var data = arrTrace;
 
