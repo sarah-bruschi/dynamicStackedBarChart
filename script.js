@@ -47,15 +47,15 @@ $.ajax({
                         value['year'] +
                     '</td>' +
 
-                    '<span class="  ">' +
+                    '<td>' +
                         value['bpm'] +
                     '</td>' +
 
-                    '<span class="  ">' +
+                    '<td>' +
                     value['nrgy'] +
                     '</td>' +
 
-                    '<span class="  ">' +
+                    '<td>' +
                     value['dnce'] +
                     '</td>' +
 
@@ -67,11 +67,11 @@ $.ajax({
                     value['live'] +
                     '</td>' +
 
-                    '<span class="  ">' +
+                    '<td>' +
                     value['val'] +
                     '</td>' +
 
-                    '<span class="  ">' +
+                    '<td>' +
                     value['dur'] +
                     '</td>' +
 
@@ -83,7 +83,7 @@ $.ajax({
                     value['spch'] +
                     '</td>' +
 
-                    '<span class="  ">' +
+                    '<td>' +
                     value['pop'] +
                     '</td>' +
                 '</tr>'
