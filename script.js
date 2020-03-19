@@ -22,9 +22,8 @@ $.ajax({
     success: function (data) {
 
         var jsonData = $.csv.toObjects(data);
-        var jsonData1 = jsonData.replace("�", "&ntilde;");
 
-        console.log(jsonData1);
+        console.log(jsonData);
 
         $.each(jsonData, function (index, value) {
 
