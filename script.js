@@ -4,6 +4,7 @@ var csv_file_API = './2019top10.csv';
 $(document).ready(function () {
 
     var titles =  [];
+    var artist =  [];
     var bpm =  [];
 
 // read csv file and convert to json format
@@ -53,6 +54,7 @@ $.ajax({
                 '</tr>'
             );
             titles.push(value['title']);
+            artist.push(value['artist']);
             bpm.push(value['bpm']);
         });
     } // end: Ajax success API call
@@ -62,5 +64,6 @@ $.ajax({
 
 
 console.log(titles);
+console.log(artist);
 console.log(bpm);
 });//end document on ready 
