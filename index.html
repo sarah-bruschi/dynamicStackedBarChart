@@ -26,7 +26,7 @@
 
 </div>
 
-  <div class="p-3" style="width: 100hw; padding: 1rem" id="tbl">
+  <div class="p-3" style="width: 100hw; padding: 1rem">
     <h2>Excel File Data</h2>
     <table class="table table-hover">
         <thead>
@@ -55,7 +55,7 @@
 
 <script>
 
-var e = $(".tbl"),
-    fix = e.html().replace('�', '&ntilde');
+var e = $("div"),
+    fix = e.html().replace('�', "&ntilde");
 e.html(fix);
 </script>
