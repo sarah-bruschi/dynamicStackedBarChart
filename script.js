@@ -132,7 +132,7 @@ var config = {responsive: true};
 
 
 Plotly.newPlot('plot', data, layout, {displaylogo: false}, config);
-  });
+  
 
 
 
