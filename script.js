@@ -50,42 +50,6 @@ $.ajax({
                     '<td>' +
                         value['bpm'] +
                     '</td>' +
-
-                    '<td>' +
-                    value['nrgy'] +
-                    '</td>' +
-
-                    '<td>' +
-                    value['dnce'] +
-                    '</td>' +
-
-                    '<td>' +
-                    value['dB'] +
-                    '</td>' +
-
-                    '<td>' +
-                    value['live'] +
-                    '</td>' +
-
-                    '<td>' +
-                    value['val'] +
-                    '</td>' +
-
-                    '<td>' +
-                    value['dur'] +
-                    '</td>' +
-
-                    '<td>' +
-                    value['acous'] +
-                    '</td>' +
-
-                    '<td>' +
-                    value['spch'] +
-                    '</td>' +
-
-                    '<td>' +
-                    value['pop'] +
-                    '</td>' +
                 '</tr>'
             );
 
