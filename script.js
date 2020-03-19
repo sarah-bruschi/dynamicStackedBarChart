@@ -29,7 +29,7 @@ $.ajax({
 
             $('#showCSV').append(
 
-                '<li class="list-group-item d-flex justify-content-between align-items-center">' + 
+                // '<li class="list-group-item d-flex justify-content-between align-items-center">' + 
                     
                     '<span style="margin-right: 2rem; font-size: 1rem; font-weight: bold; color: #37474F">' +
                         value['title'] +
@@ -85,8 +85,8 @@ $.ajax({
 
                     '<span class="  ">' +
                     value['pop'] +
-                    '</span>' +
-                '</li>'
+                    '</span>' 
+                // '</li>'
             );
 
         });
