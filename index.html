@@ -38,8 +38,12 @@
         <tbody id="showExcel"></tbody>
     </table>
 </div>
+<div id="plot">
 
+</div>
 </body>
+
+
 
 <script>
 
@@ -56,7 +60,6 @@
 
 arrTrace = [];
 
-// var I = 0;
 
 for (i = 0; i < titles.length; i++) {
   var  trace   = {
@@ -107,4 +110,4 @@ layout = {
 var config = {responsive: true};
 
 
-Plotly.newPlot('PhysAct', data, layout, {displaylogo: false}, config);
+Plotly.newPlot('Plot', data, layout, {displaylogo: false}, config);
