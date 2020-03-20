@@ -75,7 +75,7 @@ $.ajax({
               '##FF3380', '##CCCC00', '##66E64D', '##4D80CC', '##9900B3',
             '##E64D66', '##4DB380', '##FF4D4D', '##99E6E6', '##6666FF'];
             
-            var rgb = [];
+            var rgb = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
 
             for(var i = 0; i < 51; i++)
                 rgb.push(Math.floor(Math.random() * 255));
@@ -90,7 +90,7 @@ $.ajax({
                             name: artist[i],
                             type:'bar',
                             marker: {
-                                color: 'rgb('+ rgb[i].join(',') +')',
+                                color: 'rgb',
                                     opacity: 0.7
                                 }
                         };
