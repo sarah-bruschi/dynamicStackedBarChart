@@ -58,14 +58,14 @@ $.ajax({
                 '</tr>'
             );
 
-      
+            titles.push(JSON.stringify(value['title']));
+            artist.push(value['artist']);
+            bpm.push(value['bpm']);
            
         });
 
        
-            titles.push(JSON.stringify(value['title']));
-            artist.push(value['artist']);
-            bpm.push(value['bpm']);
+            
     
       
     } // end: Ajax success API call
