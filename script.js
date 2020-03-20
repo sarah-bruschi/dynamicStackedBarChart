@@ -61,11 +61,16 @@ $.ajax({
 
 }); // end: of Ajax call
 
-
+let totalTitles = totalTitles.push(titles);
+let totalArtist = totalArtist.push(artist);
+let totalBPM = totalBPM.push(bpm);
 
 console.log(titles);
 console.log(artist);
 console.log(bpm);
+console.log(totalTitles.length);
+console.log(totalArtist.length);
+console.log(totalBPM.length);
 
 
 var colors = ['##FF6633', '##4D80CC', '##FF33FF', '##FFFF99', '##00B3E6',
