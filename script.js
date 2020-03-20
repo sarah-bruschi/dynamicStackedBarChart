@@ -6,7 +6,10 @@ $(function() {
     var titles =  [];
     var artist =  [];
     var bpm =  [];
-
+    var totalTitles =  [];
+    var totalArtist =  [];
+    var totalBPM =  [];
+   
 // read csv file and convert to json format
 $.ajax({
 
