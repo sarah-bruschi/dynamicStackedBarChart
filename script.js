@@ -24,12 +24,11 @@ $.ajax({
     success: function (data) {
 
         var jsonData = $.csv.toObjects(data);
-       
+        var jsonArray = $.csv.toArrays(data);
+        console.log(jsonArray);
 
         // console.log(jsonData);
-
-        for(var i in jsonData)
-    titles.push([i, jsonData [i]]);
+        
      
 
         $.each(jsonData, function (index, value) {
@@ -64,7 +63,7 @@ $.ajax({
         });
 
        
-            // titles.push(value);
+            titles.push(value);
             artist.push(value['artist']);
             bpm.push(value['bpm']);
     
