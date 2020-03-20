@@ -24,7 +24,7 @@ $.ajax({
     success: function (data) {
 
         var jsonData = $.csv.toObjects(data);
-        var as = JSON.parse(jstring);
+        var as = JSON.parse(jsonData);
        
         console.log(as);
 
