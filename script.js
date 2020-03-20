@@ -108,7 +108,6 @@ $.ajax({
                     x: 0,
                     y: 1.15,
                     "orientation": "h"},
-                showlegend: false,
                 barmode: 'stack',
                 xaxis: {tickangle: 45,
                     showgrid: false,
