@@ -90,7 +90,7 @@ $.ajax({
                             name: artist[i],
                             type:'bar',
                             marker: {
-                                color: 'rgb[i]',
+                                color: 'rgb('+ rgb.join(',') +')',
                                     opacity: 0.7
                                 }
                         };
