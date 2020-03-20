@@ -24,9 +24,9 @@ $.ajax({
     success: function (data) {
 
         var jsonData = $.csv.toObjects(data);
-        var myJSON = JSON.stringify(jsonData);
+        // var myJSON = JSON.stringify(jsonData);
 
-        console.log(myJSON);
+        // console.log(myJSON);
         // console.log(jsonData);
         
      
@@ -63,7 +63,7 @@ $.ajax({
         });
 
        
-            titles.push(value['title']);
+            titles.push(JSON.stringify(value['title']));
             artist.push(value['artist']);
             bpm.push(value['bpm']);
     
