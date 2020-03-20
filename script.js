@@ -82,6 +82,9 @@ $.ajax({
               var  trace   = {
                             x: [titles[i]],
                             y: [bpm[i]],
+                            hovertemplate: 'Artist: $%{artist[i]}' +
+                            '<br>BPM: $%{y:.2f}<br>' +
+                            '<b>%{text}</b>',
                             name: [artist[i]],
                             type:'bar',
                             marker: {
@@ -104,12 +107,9 @@ $.ajax({
                     xref: 'paper',
                     x: 0
                 },
-                legend: {
-                    x: 0,
-                    y: 1.15,
-                    "orientation": "h"},
+                showlegend: false,
                 barmode: 'stack',
-                xaxis: {tickangle: 0,
+                xaxis: {tickangle: 0.2,
                     showgrid: false,
                     zeroline: false,
                     showline: false
