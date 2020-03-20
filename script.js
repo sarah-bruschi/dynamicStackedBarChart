@@ -77,9 +77,7 @@ $.ajax({
             
             var rgb = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
 
-            for(var i = 0; i < 51; i++)
-                rgb.push(Math.floor(Math.random() * 255));
-
+          
             arrTrace = [];
             
             
