@@ -55,10 +55,11 @@ $.ajax({
             );
 
           
-            titles.push(value.title);
-            artist.push(value['artist']);
-            bpm.push(value['bpm']);
+           
         });
+        titles.push(value.title);
+        artist.push(value['artist']);
+        bpm.push(value['bpm']);
     } // end: Ajax success API call
 
 }); // end: of Ajax call
