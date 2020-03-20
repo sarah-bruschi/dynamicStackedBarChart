@@ -24,10 +24,12 @@ $.ajax({
     success: function (data) {
 
         var jsonData = $.csv.toObjects(data);
-        var jsonString= $.csv.toString(data);
+        var as = JSON.parse(jstring);
+       
+        console.log(as);
 
         // console.log(jsonData);
-        console.log(jsonString);
+     
 
         $.each(jsonData, function (index, value) {
 
@@ -60,11 +62,11 @@ $.ajax({
            
         });
 
-        $.each(jsonString, function (index, value) {
+       
             titles.push(value);
             artist.push(value['artist']);
             bpm.push(value['bpm']);
-        });
+    
       
     } // end: Ajax success API call
 
