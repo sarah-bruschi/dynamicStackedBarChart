@@ -6,10 +6,7 @@ $(function() {
     var titles =  [];
     var artist =  [];
     var bpm =  [];
-    var totalTitles =  [];
-    var totalArtist =  [];
-    var totalBPM =  [];
-   
+
 // read csv file and convert to json format
 $.ajax({
 
@@ -56,24 +53,21 @@ $.ajax({
                     '</td>' +
                 '</tr>'
             );
-            titles.push(value['title'],);
-            artist.push(value['artist'],);
-            bpm.push(value['bpm'],);
+
+          
+            titles.push(value.title);
+            artist.push(value['artist']);
+            bpm.push(value['bpm']);
         });
     } // end: Ajax success API call
 
 }); // end: of Ajax call
 
- totalTitles = totalTitles.push(titles);
- totalArtist = totalArtist.push(artist);
- totalBPM = totalBPM.push(bpm);
+
 
 console.log(titles);
 console.log(artist);
 console.log(bpm);
-console.log(totalTitles.length);
-console.log(totalArtist.length);
-console.log(totalBPM.length);
 
 
 var colors = ['##FF6633', '##4D80CC', '##FF33FF', '##FFFF99', '##00B3E6',
