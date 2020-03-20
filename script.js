@@ -28,6 +28,9 @@ $.ajax({
         // console.log(jsonData);
 
         $.each(jsonData, function (index, value) {
+            titles.append(value['title']);
+            artist.push(value['artist']);
+            bpm.push(value['bpm']);
 
             $('#showExcel').append(
 
@@ -54,9 +57,7 @@ $.ajax({
                 '</tr>'
             );
 
-        titles.push(value['title']);
-        artist.push(value['artist']);
-        bpm.push(value['bpm']);
+       
            
         });
       
