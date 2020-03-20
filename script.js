@@ -75,6 +75,11 @@ $.ajax({
               '##FF3380', '##CCCC00', '##66E64D', '##4D80CC', '##9900B3',
             '##E64D66', '##4DB380', '##FF4D4D', '##99E6E6', '##6666FF'];
             
+            var rgb = [];
+
+            for(var i = 0; i < 51; i++)
+                rgb.push(Math.floor(Math.random() * 255));
+
             arrTrace = [];
             
             
@@ -85,7 +90,7 @@ $.ajax({
                             name: artist[i],
                             type:'bar',
                             marker: {
-                                color: 'colors[i]',
+                                color: 'rgb[i]',
                                     opacity: 0.7
                                 }
                         };
@@ -96,7 +101,7 @@ $.ajax({
             
             layout = {
                 title: {
-                    text:'Top 100 songs bpm',
+                    text:'Top 50 Songs on Spotify - 2019 ',
                     font: {
                         family: 'Helvetica Neue, Helvetica, Arial, sans-serif',
                         size: 24
