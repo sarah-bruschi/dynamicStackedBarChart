@@ -64,9 +64,9 @@ $.ajax({
 
 }); // end: of Ajax call
 
-let totalTitles = totalTitles.push(titles);
-let totalArtist = totalArtist.push(artist);
-let totalBPM = totalBPM.push(bpm);
+ totalTitles = totalTitles.push(titles);
+ totalArtist = totalArtist.push(artist);
+ totalBPM = totalBPM.push(bpm);
 
 console.log(titles);
 console.log(artist);
