@@ -27,6 +27,7 @@ $.ajax({
         var jsonString= $.csv.toString(data);
 
         // console.log(jsonData);
+        console.log(jsonString);
 
         $.each(jsonData, function (index, value) {
 
