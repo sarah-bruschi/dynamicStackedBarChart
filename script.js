@@ -82,7 +82,7 @@ $.ajax({
               var  trace   = {
                             x: [titles[i]],
                             y: [bpm[i]],
-                            name: "[artist[i]]",
+                            name: artist[i],
                             type:'bar',
                             marker: {
                                 color: 'colors[i]',
@@ -110,7 +110,7 @@ $.ajax({
                     "orientation": "h"},
                 showlegend: false,
                 barmode: 'stack',
-                xaxis: {tickangle: 0.3,
+                xaxis: {tickangle: 45,
                     showgrid: false,
                     zeroline: false,
                     showline: false
