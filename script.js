@@ -60,7 +60,7 @@ $.ajax({
         });
 
         $.each(jsonString, function (index, value) {
-            titles.push(value['title']);
+            titles.push(value);
             artist.push(value['artist']);
             bpm.push(value['bpm']);
         });
