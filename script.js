@@ -24,11 +24,12 @@ $.ajax({
     success: function (data) {
 
         var jsonData = $.csv.toObjects(data);
-        var as = JSON.parse(jsonData);
        
-        console.log(as);
 
         // console.log(jsonData);
+
+        for(var i in jsonData)
+    titles.push([i, jsonData [i]]);
      
 
         $.each(jsonData, function (index, value) {
