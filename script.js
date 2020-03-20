@@ -3,7 +3,7 @@ var csv_file_API = './2019top10.csv';
 
 $(function() {
 
-    var titles =  [];
+    titles = new Array();
     var artist =  [];
     var bpm =  [];
 
@@ -54,19 +54,19 @@ $.ajax({
                 '</tr>'
             );
 
-          
-           
-        });
-        titles.push(value.title);
+        titles.push(value['title']);
         artist.push(value['artist']);
         bpm.push(value['bpm']);
+           
+        });
+      
     } // end: Ajax success API call
 
 }); // end: of Ajax call
 
 
 
-console.log(titles);
+console.log(titles.length);
 console.log(artist);
 console.log(bpm);
 
