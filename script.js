@@ -64,7 +64,7 @@ $.ajax({
         });
 
        
-            titles.push(value);
+            // titles.push(value);
             artist.push(value['artist']);
             bpm.push(value['bpm']);
     
