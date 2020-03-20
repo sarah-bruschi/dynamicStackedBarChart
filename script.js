@@ -82,7 +82,7 @@ $.ajax({
               var  trace   = {
                             x: [titles[i]],
                             y: [bpm[i]],
-                            name: [artist],
+                            name: [artist[i]],
                             type:'bar',
                             marker: {
                                 color: 'colors[i]',
